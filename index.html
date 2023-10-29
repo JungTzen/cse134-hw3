@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="title" content="Jung Tzen Liew's Page">
+        <meta name="author" content="Jung Tzen Liew">
+        <meta name="keywords" content="Resume, LinkedIn, GitHub, About Me, University of California San Diego">
+        
+        <!--Will implement a stylesheet in the future HW, this is to show how I will use the link tag-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Jung Tzen Liew's HomePage</title>
+    </head>
+    <body>
+        <header>
+            <h1 style="color:mediumseagreen">Welcome to Jung's Page!</h1>
+            <details>
+                <summary><strong>DIRECTORY *click here to check out my page*</strong></summary>
+                <nav>
+                    <ul>
+                        <li><a href="all_about_me.html">ABOUT ME</a></li>
+                        <li><a href="documents.html">LET'S GET PROFESSIONAL</a></li>
+                        <li><a href="contact.html">CONTACT ME</a></li>
+                    </ul>
+                </nav>
+            </details>
+        </header>
+        <main>
+            <section>
+                <h2>Experiments!</h2>
+                <script>
+                    console.log("Hello in JavaScript Land!");
+                </script>
+
+                <p>Here's some <b>cool</b> <i>V I S U A L</i>!</p>
+
+                <p><strong>CIRCLE IN AN SVG TAG!</strong></p>
+
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" fill="mediumseagreen" />
+                </svg>
+                <hr>
+                <p><strong>CIRCLE IN A CANVAS TAG!</strong></p>
+                <canvas id="my_art" width="300" height="200" style="border:1px solid #000000;"></canvas>
+                <script>
+                    var c = document.getElementById("my_art");
+                    var ctx = c.getContext("2d");
+                    ctx.beginPath();
+                    ctx.arc(150, 100, 40, 0, 2 * Math.PI);
+                    ctx.fillStyle = "mediumseagreen";
+                    ctx.fill()
+                </script>
+                <hr>
+                <p><strong>code tag demo</strong></p>
+                <p>Below is how you would print "Hello World" in Python:</p>
+                <code>print("Hello World")</code>
+                <hr>
+                <p><strong>div tag demo</strong></p>
+                <div class="example-div">
+                    <p>I am too scared to put div tags anywhere else but here!</p>
+                    <p>This is inside a div tag under the class "example-div"</p>
+                </div>
+                <template id="template_tag_demo">
+                    <p>This is an example of a template tag</p>
+                </template>
+                <hr>
+                <p><strong>span tag demo</strong></p>
+                <p>This is a span demo, <span class="span_demo">this is inside the span tag</span>.</p>
+            </section>
+            <hr>
+            <section>
+                <h2>Extra Credit</h2>
+                <p>Fun Fact MathML works in HTML! Here's an example:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML"></math>
+                    <math display="block">
+                        <mi>E</mi> 
+                        <mo> = </mo> 
+                        <mi> m </mi> 
+                        <msup>
+                            <mi>c</mi>
+                            <mn>2</mn>
+                        </msup>
+                </math>
+                <br>
+                <p>MathML was recently put in place due to its unstable past. It was originally supported on Chrome 24 but was temporarily removed after. Users had to use applications such as MathJax as an alternative to MathML. My assumption of why MathML took a while for its modern-day implementation into Chrome is 
+                    due to the complexity of make it accessible and accurate for all users. Developers have attempted to implement MathML previous but ran into issues and now devs have to take into account the many different device profiles and the accuracy in interpreting mathematical notations and rendering it in HTML. 
+                    Lastly, there is also the possibility that developers had to focus on other issues/needs of Chrome which are more pressing than implementing MathML.
+                </p>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <p>Thanks for checking out my page!</p>
+        </footer>
+    </body>
+</html>
