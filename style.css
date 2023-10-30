@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+footer{
+    text-align: center;
+}
+
+.tab {
+    color: darkgreen;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 100px 50px;
+}
+
+.tab:hover{
+    background-color: lightblue;
+}
