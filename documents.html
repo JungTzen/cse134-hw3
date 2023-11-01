@@ -11,27 +11,51 @@
         <style>
             @import url(/styles/vars.css);
             
-            table{
-                border: 4px solid black;
+            .relevant_skills{
+                margin-top: 10px;
+                padding: 20px;
             }
+
+            th,td{
+                border: 5px solid darkgreen;
+                text-align: center;
+                padding: 5px;
+            }
+
+            th{
+                background-color: mediumseagreen;
+                color: white;
+            }
+
+            td:hover {
+                background-color: lightgreen;
+            }
+
 
             .links{
                 display: flex;
-                justify-content: start;
-                border: none;
-                background-color: black;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                border: 5px solid darkgreen;
+                width: 100%;
             }
 
-            a .links{
-                width: 50px;
-                height: auto;
+            .linkedin:hover , .github:hover{
+                background-color: mediumseagreen;
+                color: darkgreen;
+            }
+
+            .resume_link:hover{
+                background-color: mediumseagreen;
+                color: darkgreen;
             }
 
         </style>
     </head>
     <body>
         <header>
-            <h1>LET'S GET PROFESSIONAL</h1>
+            <h1><u>LET'S GET PROFESSIONAL</u></h1>
             <a class="tab" href="index.html">HOMEPAGE</a>
             <a class="tab" href="all_about_me.html">ABOUT ME</a>
             <a class="tab" href="contact.html">CONTACT ME</a>
@@ -40,23 +64,24 @@
             <br>
             <section class="professional">
                 <section class="resume">
-                    <a href="documents/Jung_Tzen_Liew_Resume.pdf" target="_blank">RESUME</a>
-                    <br>
-                    <embed src="documents/Jung_Tzen_Liew_Resume.pdf" width="500px" height="500px"/>
+                    <a class="resume_link" href="documents/Jung_Tzen_Liew_Resume.pdf" target="_blank" style="border: 5px solid darkgreen";>RESUME</a>
+                    <embed src="documents/Jung_Tzen_Liew_Resume.pdf" style="width: 100%; height: 100%; margin-top: 50px;" type="application/pdf"/>
                 </section>
 
                 <br>
                 <div class="other_documents">
-                    <a class="links" href="https://www.linkedin.com/in/jung-tzen-liew" target="_blank">
-                        <img src="images/linkedin_logo.png" alt="LinkedIn Logo" width="100px" height="auto">
-                    </a>
-                    <a class="links" href="https://github.com/JungTzen" target="_blank">
-                        <img src="images/github_logo.png" alt="GitHub Logo" width="100px" height="auto">
-                    </a>
+                    <section class="links">
+                        <a class="linkedin" href="https://www.linkedin.com/in/jung-tzen-liew" target="_blank">
+                            <img src="images/linkedin_logo.png" alt="LinkedIn Logo" width="100px" height="auto">
+                        </a>
+                        <a class="github" href="https://github.com/JungTzen" target="_blank">
+                            <img src="images/github_logo.png" alt="GitHub Logo" width="100px" height="auto">
+                        </a>
+                    </section>
 
-                    <br>
 
                     <table class="relevant_skills">
+                        <caption style="color: darkgreen;"><strong>RELEVANT COURSES</strong></caption>
                         <colgroup>
                             <col class="bioinfo">
                             <col class="software_dev">
