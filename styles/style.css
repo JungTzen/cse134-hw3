@@ -1,0 +1,145 @@
+@import url(vars.css);
+
+:root{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--subheading-color);
+    font-size: var(--subheading-size);
+}
+
+h1{ 
+    margin-bottom : .5em;
+    color : var(--heading-color);
+    font-size : var(--heading-size);
+    text-align: center;
+}
+
+h2{
+    color: var(--heading-color);
+}
+
+main{
+    font-size: large;
+}
+
+footer{
+    text-align: center;
+}
+
+a{
+    color: darkgreen;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 25px;
+    border: 5px solid darkgreen;
+    padding: 15px;
+}
+
+/* HOMEPAGE */
+
+.tab {
+    color: darkgreen;
+    text-decoration: none;
+    margin: 50px;
+    border: 5px solid darkgreen;
+    padding: 15px;
+    display: inline-block;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 1s, color 0.5s;
+}
+
+.tab:hover{
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+/* LET'S GET PROFESSIONAL */
+section.important_documents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--heading-color);
+    font-size: var(--subheading-size);
+    margin: 20px;
+}
+
+table.relevant_skills{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ABOUT ME */
+
+.all_about_me{
+    padding: 2px;
+    border: 5px solid black;
+    text-align: center;
+}
+
+.music{
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    border: 5px solid black;
+}
+
+.my_current_music, .spotify{
+    flex: 1;
+    text-align: center;
+}
+
+.my_current_music{
+    border-right: 2px;
+}
+
+aside {
+	border : 4px double black;
+	background-color : darkgreen;
+    color: white;
+	padding : 1em;
+	margin-right: 1em;
+	float : left;
+	width : 50vw;
+    text-align: center;
+}
+
+/* IMPORTANT DOCUMENTS */
+
+.professional{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+.resume{
+    padding: 50px;
+    border: 5px solid black;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.other_documents{
+    display: flex;
+    flex-direction: column;
+}
+
+.linkedin .github{
+    padding: 50px;
+    border: 5px solid black;
+    text-align: center;
+    margin-right: 50px;
+}
