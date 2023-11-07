@@ -5,10 +5,11 @@
         <meta name="title" content="Jung Tzen Liew's Portfolio">
         <meta name="author" content="Jung Tzen Liew">
         <meta name="keywords" content="Resume, LinkedIn, GitHub">
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/documents.css">
         <title>Professional Page</title>
 
         <style>
+            /*
             @import url(/styles/vars.css);
             
             .relevant_skills{
@@ -50,22 +51,26 @@
                 background-color: mediumseagreen;
                 color: darkgreen;
             }
-
+            */
         </style>
     </head>
     <body>
-        <header>
-            <h1><u>LET'S GET PROFESSIONAL</u></h1>
-            <a class="tab" href="index.html">HOMEPAGE</a>
-            <a class="tab" href="all_about_me.html">ABOUT ME</a>
-            <a class="tab" href="contact.html">CONTACT ME</a>
+        <header class="header_container">
+            <nav class="navigation">
+                <ul id="menu">
+                    <li><a href="index.html">HOMEPAGE</a></li>
+                    <li><a href="all_about_me.html">ABOUT ME</a></li>
+                    <li><a href="documents.html" class="current_page">LET'S GET PROFESSIONAL</a></li>
+                    <li><a href="contact.html">CONTACT ME</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
             <br>
             <section class="professional">
                 <section class="resume">
-                    <a class="resume_link" href="documents/Jung_Tzen_Liew_Resume.pdf" target="_blank" style="border: 5px solid darkgreen";>RESUME</a>
-                    <embed src="documents/Jung_Tzen_Liew_Resume.pdf" style="width: 100%; height: 100%; margin-top: 50px;" type="application/pdf"/>
+                    <a class="resume_link" href="documents/Jung_Tzen_Liew_Resume.pdf" target="_blank">RESUME</a>
+                    <embed src="documents/Jung_Tzen_Liew_Resume.pdf" type="application/pdf"/>
                 </section>
 
                 <br>

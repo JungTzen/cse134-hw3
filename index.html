@@ -8,32 +8,27 @@
         
         <title>Jung Tzen Liew's HomePage</title>
 
-        <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen" type="text/css">
+        <link rel="stylesheet" type="text/css" href="styles/index_style.css" media="screen" type="text/css">
         <link rel="stylesheet" type="text/css" href="styles/printer.css" media="print">
-
-        <style>
-            header {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        color: var(--subheading-color);
-                        font-size: var(--subheading-size);
-                    }
-        </style>
-
+        
     </head>
     <body>
         <header>
-            <h1 style="color:darkgreen"><u>WELCOME TO JUNG'S PAGE!</u></h1>
-            <a href="all_about_me.html" class="tab">ABOUT ME</a>
-            <a href="documents.html" class="tab">LET'S GET PROFESSIONAL</a>
-            <a href="contact.html" class="tab">CONTACT ME</a>
+            <h1 style="color:darkgreen"><u>WELCOME TO MY PAGE!</u></h1>
         </header>
-        <main>
+        <main class="homepage">
+            <section class="homepage_nav">
+                <a href="all_about_me.html" class="tab">ABOUT ME</a>
+                <a href="documents.html" class="tab">LET'S GET PROFESSIONAL</a>
+                <a href="contact.html" class="tab">CONTACT ME</a>
+            </section>
+
+            <br>
+
+            <picture class="portrait">
+                <source srcset="/images/portrait.jpg" type="image/webp" width="400px" height="400px">
+                <img src="/images/portrait.jpg" alt="Missing image">
+            </picture>
         </main>
-        <footer>
-            <p>Thanks for checking out my page!</p>
-        </footer>
     </body>
 </html>
