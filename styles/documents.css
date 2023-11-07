@@ -62,3 +62,83 @@ body{
     background-color: darkgreen;
     color: white;
 }
+
+/*MAIN*/
+
+.professional{
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume{
+    flex: 1;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.summary_blurb{
+    flex: 1;
+    border: 10px;
+    background-color: mediumseagreen;
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap; 
+    background-color:seagreen;
+    margin: 20px;
+}
+
+.links a {
+    margin: 30px; 
+    text-align: center; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.resume_link{
+    max-width: 400px;
+    margin: 50px; padding: 15px;
+    display: block;
+    color: darkgreen;
+    text-decoration: none;
+    border: 5px solid darkgreen;
+    border-radius: 15px;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background-color 1s, color 0.5s;
+}
+
+.resume_link:hover{
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.links a{
+    transition: transform .2s;
+}
+
+  
+.links a:hover {
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25); 
+}

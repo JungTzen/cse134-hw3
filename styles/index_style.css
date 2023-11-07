@@ -39,7 +39,7 @@ header{
 }
 
 .tab:hover{
-    background-color: lightgreen;
+    background-color: rgb(145, 217, 145);
     color: darkgreen;
 }
 
