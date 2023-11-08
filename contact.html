@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <meta name="title" content="Jung Tzen Liew's About Me">
         <meta name="author" content="Jung Tzen Liew">
         <meta name="keywords" content="About Me, University of California San Diego, Peanut Gallery">
         <link rel="stylesheet" type="text/css" href="styles/contact.css">
         <title>Contact Me</title>
+        <style>
+            /*
+            @media screen and (max-width: 992px) {
+
+                body {
+                    background-color: white;
+                    color: white;
+                }
+            }
+
+                @media screen and (max-width: 600px) {
+                body {
+                    background-color: pink;
+                    color: white;
+                }
+            }
+            */
+        </style>
     </head>
     <body>
         <header class="header_container">
@@ -20,31 +39,18 @@
             </nav>
         </header>
         <main>
-            <p>Feel free to put down any comments or concerns you have below!</p>
             <br>
-            <form>
-                <fieldset>
-                    <legend>Connect with me!</legend>
-                    <label>Did you like the website?</label>
-                    <input type="radio" id="yes" name="rating">
-                    <label for="yes">YES :&#40;</label>
-                    <input type="radio" id="not_bad" name="rating">
-                    <label for="not_bad">Could use some work...</label>
-                    <input type="radio" id="no" name="rating">
-                    <label for="yes">NO :&#41; </label>
-                    <hr>
-                    <label for="name">What's your name? &#40;put N/A if you are not comfortable with sharing&#41;</label>
-                    <br>
-                    <textarea id="name">Enter your name here...</textarea>
-                    <hr>
-                    <label for="email">What's your email? &#40;put N/A if you are not comfortable with sharing&#41;</label>
-                    <br>
-                    <input type="email" id="email" placeholder="example@gmail.com">
-                    <hr>
-                    <label for="linkedin">What's your LinkedIn? &#40;put N/A if you are not comfortable with sharing or don't have one&#41;</label>
-                    <br>
-                    <textarea id="linkedin">Enter your LinkedIn here...</textarea>
-                    <hr>
+            <form class="suggestions">
+                <fieldset>                    
+                    <label for="name">What's your name?</label>
+                    <input type="text" id="name" placeholder="Enter your name here..."><hr>
+                    
+                    <label for="email">What's your email?</label>
+                    <input type="email" id="email" placeholder="example@gmail.com"><hr>
+                    
+                    <label for="linkedin">What's your LinkedIn <link rel="stylesheet" href="">? &#40;put N/A if you don't have one&#41;</label>
+                    <input type="text" id="linkedin" placeholder="Enter your LinkedIn here..."><hr><hr>
+                    
                     <label for="outreach_input">How did you find out about my website?</label>
                     <input list="outreach_options" id="outreach_input">
                     <datalist id="outreach_options">
@@ -104,14 +110,10 @@
                         <option value="other">My animal was not here :&#40;</option>
                     </select>
                     <hr>
-                    <button type="submit">Save</button>
-
+                    <input type="submit" value="Submit">
                 </fieldset>
             </form>
         </main>
         <hr>
-        <footer>
-            <p>Thanks for checking out my page!</p>
-        </footer>
     </body>
 </html>
