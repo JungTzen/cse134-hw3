@@ -1,9 +1,5 @@
 @import url(vars.css);
 
-:root{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 body{
     background-color: var(--background-color);
     height: 100vh;

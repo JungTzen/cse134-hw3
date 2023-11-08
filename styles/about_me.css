@@ -1,9 +1,5 @@
 @import url(vars.css);
 
-:root{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 body{
     background-color: var(--background-color);
     height: 100vh;
@@ -13,7 +9,6 @@ body{
 /*HEADER*/
 
 .header_container {
-    border: 1px solid black;
     position: relative;
     padding: 0 2rem;
     width: auto;
@@ -53,8 +48,8 @@ body{
 }
 
 #menu li a:hover{
-    background-color: white;
-    color: darkgreen;
+    background-color: var(--hover-background-color);
+    color: white;
     -ms-transform: scale(1.25); /* IE 9 */
     -webkit-transform: scale(1.25); /* Safari 3-8 */
     transform: scale(1.25); 
@@ -69,7 +64,6 @@ body{
 
 .about_me_top{
     display: flex;
-    border: 1px solid black;
     align-items: center;
     justify-content: space-between;
 }
@@ -96,20 +90,20 @@ body{
     margin: 20px auto;
 }
 
-.placeholder_pic{
-    flex: 1;
-    height: 80%;
-    width: 100%;
-    margin: 10px;
+.placeholder_pic {
     text-align: center;
-    align-items: center;
+    margin: 10px;
 }
 
 .placeholder_pic picture {
-    display: block; 
+    display: block;
+    margin: auto;
+}
+
+.placeholder_pic img {
     max-width: 100%;
-    height: auto; 
-    border: none; 
+    height: auto;
+    border: none;
 }
 
 .my_current_music{
@@ -157,6 +151,31 @@ aside {
     margin: 20px;
 }
 
+.photo_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+.pic {
+    flex: 1 1 40%;
+    padding: 0 5px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.pic picture {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.pic img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 @media screen and (max-width: 768px) {
     .header_container {
         padding: 10px; /* Reduced padding for smaller screens */
@@ -184,12 +203,13 @@ aside {
         flex-direction: column; 
     }
     .placeholder_pic {
-        width: fit-content;
-        height: auto;
-        margin: 0 auto;
-        border: none;
-
+        width: 60%;
+        margin: 20px auto;
     }
+
+    .pic {
+        flex-basis: 50%;
+      }
 }
 
 @media screen and (max-width: 500px) {
@@ -201,5 +221,14 @@ aside {
         padding: 8px 10px;
         border: 1px solid darkgreen;
         font-size: small;
+    }
+
+    .placeholder_pic {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .pic {
+        flex-basis: 100%;
     }
 }
