@@ -1,7 +1,7 @@
 @import url(vars.css);
 
 :root{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
