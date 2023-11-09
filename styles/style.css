@@ -376,6 +376,7 @@ td:hover {
     padding: 10px;
     max-width: 350px;
     list-style: none;
+    transition: transform .2s;
 }
 
 aside {
@@ -388,6 +389,13 @@ aside {
 	max-width: 400px;
     text-align: center;
     display: block;
+    transition: transform .2s;
+}
+
+.top5 li:hover, aside:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
 }
 
 .spotify{
