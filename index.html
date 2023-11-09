@@ -5,18 +5,27 @@
         <meta name="title" content="Jung Tzen Liew's Page">
         <meta name="author" content="Jung Tzen Liew">
         <meta name="keywords" content="Resume, LinkedIn, GitHub, About Me, University of California San Diego">
-        
+        <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen" type="text/css">
         <title>Jung Tzen Liew's HomePage</title>
+        <style>
+            body{
+                background-color: var(--background-color);
+                height: 100vh;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
 
-        <link rel="stylesheet" type="text/css" href="styles/index_style.css" media="screen" type="text/css">
-        <link rel="stylesheet" type="text/css" href="styles/vars.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+            header{
+                text-align: center;
+            }
+        </style>
     </head>
-    <body>
+    <body id="index_body">
         <header>
-            <h1 style="color:darkgreen"><u>WELCOME TO MY PAGE!</u></h1>
+            <h1 style="color:darkgreen">JUNG TZEN LIEW</h1>
         </header>
         <main class="homepage">
             <section class="homepage_nav">
@@ -27,7 +36,7 @@
 
             <br>
 
-            <picture class="portrait">
+            <picture class="portrait_index">
                 <source srcset="/images/portrait.jpg" type="image/webp" width="400px" height="400px">
                 <img src="/images/portrait.jpg" alt="Missing image">
             </picture>

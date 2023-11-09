@@ -64,18 +64,71 @@ body{
     color: white;
 }
 
-/*DOCUMENTS*/
+/* ================ 
+        HOMEPAGE 
+   ================ */
+
+.homepage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tab{
+    display: flex;
+    max-width: 400px;
+    justify-content: center;
+    margin-left: 100px; margin-right: 80px; margin-bottom: 50px; padding: 15px;
+    color: darkgreen;
+    text-decoration: none;
+    border: 5px solid darkgreen;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 1s, color 0.5s;
+    transition: transform .2s;
+}
+
+.tab:hover{
+    /*background-color: white;*/
+    background-color: color-mix(in srgb, darkgreen, rgb(225, 242, 187) 50%);
+    color: white;
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25); 
+}
+
+.portrait{
+    margin: 20px;
+    border: 20px solid darkgreen;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.portrait_index picture {
+    display: block; 
+    max-width: 100%;
+    height: auto; 
+    border: none;
+    animation: spin 3s linear infinite;
+}
+  
+h1{
+    font-size: 3rem;
+}
+
+/* ================ 
+    DOCUMENTS 
+   ================ */
 
 .professional{
     display: flex;
     /*border: 1px solid black;*/
     align-items: center;
     justify-content: center;
-}
-
-.portrait{
-    margin: 20px;
-    border: 20px solid darkgreen;
 }
 
 .portrait img {
@@ -176,10 +229,13 @@ td:hover {
     color: white;
 }
 
-/* CONTACT */
+/* ================ 
+        CONTACT 
+   ================ */
 
 .suggestions {
     border-radius: 5px;
+    border: 5px solid darkgreen;
     background-color: mediumseagreen;
     padding: 20px;
     color: white;
@@ -217,7 +273,7 @@ td:hover {
   }
   
   input[type="submit"]:hover {
-    background-color: #45a049; /* a slightly darker green for the hover effect */
+    background-color: #45a049;
   }
   
   label {
@@ -226,12 +282,130 @@ td:hover {
     text-align: center;
   }
   
-  /* Style for radio buttons and checkboxes */
   input[type="checkbox"] {
-    margin-right: 10px; /* adds space between the checkbox/radio button and its label */
+    margin-right: 10px; 
   }
 
-  @media screen and (max-width: 768px) {
+/* ================ 
+    ABOUT ME 
+   ================ */
+
+   .about_me_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all_about_me{
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.all_about_me strong{
+    font-size: large;
+}
+
+.all_about_me p{
+    background-color: mediumseagreen;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 350px;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+.placeholder_pic {
+    text-align: center;
+    margin: 10px;
+}
+
+.placeholder_pic picture {
+    display: block;
+    margin: auto;
+}
+
+.placeholder_pic img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+.my_current_music{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.top5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.top5 ul{
+    padding: 0;
+}
+.top5 li{
+    background-color: mediumseagreen;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 350px;
+    list-style: none;
+}
+
+aside {
+	border : 4px double black;
+    border-radius: 15px;
+	background-color : darkgreen;
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+	max-width: 400px;
+    text-align: center;
+    display: block;
+}
+
+.spotify{
+    text-align: center;
+    margin: 20px;
+}
+
+.photo_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+.pic {
+    flex: 1 1 40%;
+    padding: 0 5px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.pic picture {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.pic img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
     .header_container {
         padding: 10px;
     }
@@ -254,6 +428,14 @@ td:hover {
         font-size: medium;
     }
 
+    .homepage {
+        flex-direction: column; 
+    }
+    .tab {
+        width: 100%; 
+        margin: 10px auto; 
+    }
+
     .professional {
         flex-direction: column; 
     }
@@ -265,6 +447,18 @@ td:hover {
     .summary_blurb{
         max-width: 100%;
     }
+
+    .about_me_top {
+        flex-direction: column; 
+    }
+    .placeholder_pic {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .pic {
+        flex-basis: 50%;
+      }
 }
 
 @media screen and (max-width: 500px) {
@@ -274,7 +468,20 @@ td:hover {
 
     #menu li a {
         padding: 8px 10px;
-        border: 1px solid darkgreen;
         font-size: small;
+    }
+
+    .placeholder_pic {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .pic {
+        flex-basis: 100%;
+    }
+
+    .tab {
+        width: 80%;
+        margin: 10px 0;
     }
 }

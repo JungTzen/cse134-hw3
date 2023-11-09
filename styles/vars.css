@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap');
+
 :root {
 	--background-color : rgb(225, 242, 187);
 	--text-color :       black;
@@ -5,6 +7,7 @@
 	--heading-size :     2em;
 	--subheading-size :  1.5em;
 	--body-size :        1.25em;
-    --spacing : 1.5
+    --spacing : 1.5;
 	--hover-background-color: color-mix(in srgb, darkgreen, rgb(225, 242, 187) 50%);
+	font-family: 'Noto Serif', serif;
 }
