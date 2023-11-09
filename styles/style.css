@@ -103,22 +103,24 @@ body{
     border: 20px solid darkgreen;
 }
 
-@keyframes spin {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
-}
-
 .portrait_index picture {
     display: block; 
     max-width: 100%;
     height: auto; 
     border: none;
-    animation: spin 3s linear infinite;
 }
   
-h1{
+#homepage h1{
     font-size: 3rem;
+    color: var(--background-color);
+    animation-name: example;
+    animation-duration: 4s;
 }
+
+@keyframes example {
+    from {color: var(--background-color);}
+    to {color: darkgreen;}
+  }
 
 /* ================ 
     DOCUMENTS 
@@ -316,6 +318,13 @@ td:hover {
     text-align: center;
     display: block;
     margin: 20px auto;
+    transition: transform .2s;
+}
+
+.all_about_me p:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
 }
 
 .placeholder_pic {
