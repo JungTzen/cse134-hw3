@@ -6,7 +6,7 @@
 
 body{
     background-color: var(--background-color);
-    height: 100vh;
+    height: 100dvh;
     padding: 20px;
 }
 
@@ -55,8 +55,8 @@ body{
     & li a:hover{
         background-color: var(--hover-background-color);
         color: white;
-        -ms-transform: scale(1.25); /* IE 9 */
-        -webkit-transform: scale(1.25); /* Safari 3-8 */
+        -ms-transform: scale(1.25); 
+        -webkit-transform: scale(1.25); 
         transform: scale(1.25); 
     }
     
@@ -66,35 +66,6 @@ body{
     }
 
 }
-
-/*
-#menu li a{
-    text-decoration: none; 
-    padding: 10px 15px;
-    margin: 20px;
-    color: darkgreen;
-    border: 5px solid darkgreen;
-    font-size: large;
-    text-align: center;
-    font-weight: bold; 
-    display: block; 
-    transition: background-color 1s, color 0.5s;
-    transition: transform .2s;
-}
-
-#menu li a:hover{
-    background-color: var(--hover-background-color);
-    color: white;
-    -ms-transform: scale(1.25); 
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25); 
-}
-
-#menu li a.current_page{
-    background-color: darkgreen;
-    color: white;
-}
-*/
 
 /* ================ 
         HOMEPAGE 
@@ -124,8 +95,8 @@ body{
         /*background-color: white;*/
         background-color: color-mix(in srgb, darkgreen, rgb(225, 242, 187) 50%);
         color: white;
-        -ms-transform: scale(1.25); /* IE 9 */
-        -webkit-transform: scale(1.25); /* Safari 3-8 */
+        -ms-transform: scale(1.25); 
+        -webkit-transform: scale(1.25);
         transform: scale(1.25); 
     }
 }
@@ -174,7 +145,7 @@ body{
 
 .summary_blurb{
     flex: 1;
-    border: 10px solid darkgreen;
+    border: 10px solid color(display-p3 0 0.39 0);;
     color: black;
     margin: 10px;
     border-radius: 15px;
@@ -231,8 +202,8 @@ body{
 }
   
 .links a:hover {
-    -ms-transform: scale(1.25); /* IE 9 */
-    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    -ms-transform: scale(1.25); 
+    -webkit-transform: scale(1.25); 
     transform: scale(1.25); 
 }
 
@@ -279,7 +250,7 @@ td:hover {
   
   form {
     display: grid;
-    grid-gap: 10px; /* space between form elements */
+    grid-gap: 10px; 
   }
   
   input[type="text"],
@@ -288,7 +259,7 @@ td:hover {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: block; /* ensures full-width */
+    display: block; 
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -354,8 +325,8 @@ td:hover {
 }
 
 .all_about_me p:hover{
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1); 
     transform: scale(1.1); 
 }
 
@@ -394,8 +365,12 @@ td:hover {
 .top5 ul{
     padding: 0;
 }
-.top5 li{
+
+.top5:has(ul) li {
     background-color: mediumseagreen;
+}
+
+.top5 li{
     border-radius: 15px;
     margin: 20px auto;
     padding: 10px;
